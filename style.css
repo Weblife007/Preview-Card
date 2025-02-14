@@ -1,0 +1,203 @@
+/* 
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: outfit, Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    height: 520px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cardInfo {
+    margin-bottom: 10px;
+}
+
+#img {
+    height: 270px;
+}
+
+.color {
+    width: 280px;
+    height: 270px;
+    position: absolute;
+    background: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.cardImg {
+    width: 280px;
+    height: 271px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    object-fit: cover;
+    top: 56px;
+}
+
+.cardImg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.viewImg {
+    position: relative;
+    display: flex;
+}
+
+.cardInfo h1 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+
+.cardInfo h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.cardInfo span {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: hsl(215, 51%, 70%);
+}
+
+.value-days {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 15px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.value img {
+    margin: 5px 5px 5px 0px;
+}
+
+.value span {
+    margin-top: 3px;
+    color: hsl(178, 100%, 50%);
+    letter-spacing: -0.5px;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 95px;
+}
+
+.days img {
+    margin: 5px;
+}
+
+.days span {
+    margin-top: 3px;
+    color: hsl(215, 51%, 70%);
+    letter-spacing: -0.5px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px 5px 0px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.footer span {
+    margin-top: 8px;
+    color: hsl(215, 51%, 70%);
+}
+
+#name {
+    color: #ffffff;
+}
+
+#name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (width < 375px) {
+
+    .main {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
